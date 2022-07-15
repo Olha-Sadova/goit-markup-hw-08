@@ -10,23 +10,18 @@
     }
 }
 
-// .mob-menu__close-wrap {
-//     position: relative;
-// }
-
 .mob-menu__close-btn {
-    position: absolute;
-    top: 16px;
-    right: 15px;
+    margin-bottom: 8px;
 }
 
 .mob-menu {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100vw;
     height: 100vh;
-    padding: 20px 15px;
+    padding: 40px 48px;
     font-weight: 500;
     letter-spacing: 0.02em;
     background-color: #fff;
@@ -75,11 +70,24 @@
 
 .mob-menu__soc-list {
     display: flex;
-    gap: 7px;
+    gap: 10px;
+    margin-top: 64px;
 }
 
 .mob-menu__soc-item {
     width: fit-content;
+    position: relative;
+    padding-right: 10px;
+}
+
+.mob-menu__soc-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
 }
 
 .mob-menu__soc-link {
