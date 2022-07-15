@@ -10,19 +10,25 @@
 
 .modal {
     position: absolute;
-    width: 450;
-    height: 609px;
-    padding: 40px 39px 40px 41px;
+    width: 290px;
+    // height: 609px;
+    padding: 30px 19px 30px 21px;
     top: 50%;
     left: 50%;
+    // margin: 15px;
     transform: translate(-50%, -50%);
     background: var(--secondary-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+    }
+
     @media screen and (min-width: 1200px) {
         width: 528px;
         height: 581px;
+        padding: 40px 39px 40px 41px;
     }
 }
 
@@ -30,12 +36,16 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background: var(--secondary-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    @media screen and (min-width: 768px) and (max-width: 1199px), (min-width: 1200px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .close-button-svg {
@@ -59,12 +69,18 @@
 .modal-title {
     margin-bottom: 12px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--headline-text-color);
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 20px;
+    line-height: 1.5;    
+   }  
+   
     @media screen and (min-width: 1200px) {
+        font-size: 20px;
         line-height: 1.15;
     }
 }
@@ -88,7 +104,7 @@
 }
 
 .modal-input {
-    width: 448px;
+    width: 100%;
     height: 40px;
     padding-left: 44px;
     padding-right: 15px;
@@ -142,12 +158,14 @@
 
 .modal-label-checkbox {
     margin: 0 auto;
-    font-size: 12px;
-    line-height: 1.17;
-    // font-size: 14px;
-    // line-height: 1.71;
+    font-size: 7px;
+    line-height: 1.12;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.71;
@@ -162,12 +180,15 @@
     display: block;
     margin: 0 auto;
     margin-top: 30px;
-    width: 200px;
+    width: 150px;
     padding: 10px 32px;
     border: transparent;
     border-radius: 4px;
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    @media screen and (min-width: 768px) and (max-width: 1199px), (min-width: 1200px) {
+        width: 200px;
+    }
 }
 
 .modal-wrap {
