@@ -1,0 +1,117 @@
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team__member {
+    padding-top: 30px;
+    padding-bottom: 16px;
+    & p+p {
+        margin-top: 10px;
+    }
+}
+
+.team {
+    width: 100%;
+    background: var(--background-color);
+}
+
+.team__img {
+    width: 100%;
+    height: 460px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        height: 374px;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 260px;
+    }
+}
+
+.team__item {
+    width: 100%;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
+}
+
+.team__person, .team__jobtitle {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--headline-text-color);
+}
+
+.team__jobtitle {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.social-networks__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.social-networks__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.social-networks__icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-networks__link:hover &,
+    .social-networks__link:focus & {
+    fill: var(--secondary-color);
+}
+
+    &:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    }
+    
+    &:nth-child(2) {
+        width: 20px;
+        height: 16px;
+    }
+    
+    &:nth-child(3) {
+        width: 10px;
+        height: 20px;
+    }
+    
+    &:nth-child(4) {
+        width: 16px;
+        height: 14px;
+    }
+}
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+        <a class="logo" href="/"><span class="logo-accent">Web</span>Studio</a>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li class="header-item list"><a class="header-link link" href="index.html">Студия</a></li>
+                <li class="header-item list"><a class="header-link link current" href="portfolio.html">Портфолио</a></li>
+                <li class="header-item list"><a class="header-link link" href="/">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="header-contacts-list">
+            <li class="header-contacts list">
+                <a class="header-contacts-link link" href="mailto:info@devstudio.com">
+                <svg class="header-contacts-icon envelope">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="header-contacts list">
+                <a class="header-contacts-link link" href="tel:+380961111111">
+                <svg class="header-contacts-icon smartphone">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <div class="container portfolio__container">
+            <ul class="portfolio__btn-list">
+                <li class="portfolio__btn-item list"><button class="portfolio__btn-menu current" type="button">Все</button></li>
+                <li class="portfolio__btn-item list"><button class="portfolio__btn-menu" type="button">Веб-сайты</button></li>
+                <li class="portfolio__btn-item list"><button class="portfolio__btn-menu" type="button">Приложения</button></li>
+                <li class="portfolio__btn-item list"><button class="portfolio__btn-menu" type="button">Дизайн</button></li>
+                <li class="portfolio__btn-item list"><button class="portfolio__btn-menu" type="button">Маркетинг</button></li>
+            </ul>
+            
+            <ul class="portfolio__services-list">
+                <li class="portfolio__services-item list">
+                    <a class="portfolio__services-link link" href="">
+                        <div class="portfolio__services-top-wrapper">
+                        <img class="portfolio__services-img" src="./images/work1.jpg" alt="Ноутбук с тремя портфолио сотрудников на экране" width="370" height="294">
+                        <p class="portfolio__services-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="portfolio__services-descr">
+                        <h2 class="portfolio__services-header">Технокряк</h2>
+                        <p class="portfolio__services-text">Веб-сайт</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="portfolio__services-item list">
+                    <a class="portfolio__services-link link" href="">
+                        <div class="portfolio__services-top-wrapper">
+                        <img class="portfolio__services-img" src="./images/work2.jpg" alt="Два баскетболиста с мячом">
+                        <p class="portfolio__services-top-text"></p>
+                        </div>
+                        <div class="portfolio__services-descr">
+                        <h2 class="portfolio__services-header">Постер New Orlean vs Golden Star</h2>
+                        <p class="portfolio__services-text">Дизайн</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="portfolio__services-item list">
+                    <a class="portfolio__services-link link" href="">
+                        <div class="portfolio__services-top-wrapper">
+                        <img class="portfolio__services-img" src="./images/work3.jpg" alt="Логотип ресторана Seafood">
+                        <p class="portfolio__services-top-text"></p>
+                        </div>
+                        <div class="portfolio__services-descr">
+                        <h2 class="portfolio__services-header">Ресторан Seafood</h2>
+                        <p class="portfolio__services-text">Приложение</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="portfolio__services-item list">
+                    <a class="portfolio__services-link link" href="">
+                        <div class="portfolio__services-top-wrapper">
+                        <img class="portfolio__services-img" src="./images/work4.jpg" alt="Наушники">
+                        <p class="portfolio__services-top-text"></p>
+                        </div>
+                        <div class="portfolio__services-descr">
+                        <h2 class="portfolio__services-header">Проект Prime</h2>
+                        <p class="portfolio__services-text">Маркетинг</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="portfolio__services-item list">
+                    <a class="portfolio__services-link link" href="">
+                        <div class="portfolio__services-top-wrapper">
+                        <img class="portfolio__services-img" src="./images/work5.jpg" alt="Две коробки">
+                        <p class="portfolio__services-top-text"></p>
+                        </div>
+                        <div class="portfolio__services-descr">
+                        <h2 class="portfolio__services-header">Проект Boxes</h2>
+                        <p class="portfolio__services-text">Приложение</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="portfolio__services-item list">
+                    <a class="portfolio__services-link link" href="">
+                        <div class="portfolio__services-top-wrapper">
+                        <img class="portfolio__services-img" src="./images/work6.jpg" alt="Монитор со страницей Inspiration has no Borders">
+                        <p class="portfolio__services-top-text"></p>
+                        </div>
+                        <div class="portfolio__services-descr">
+                        <h2 class="portfolio__services-header">Inspiration has no Borders</h2>
+                        <p class="portfolio__services-text">Веб-сайт</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="portfolio__services-item list">
+                    <a class="portfolio__services-link link" href="">
+                        <div class="portfolio__services-top-wrapper">
+                        <img class="portfolio__services-img" src="./images/work7.jpg" alt="Разворот журнала с заголовком I am Limited Edition">
+                        <p class="portfolio__services-top-text"></p>
+                        </div>
+                        <div class="portfolio__services-descr">
+                        <h2 class="portfolio__services-header">Издание Limited Edition</h2>
+                        <p class="portfolio__services-text">Дизайн</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="portfolio__services-item list">
+                    <a class="portfolio__services-link link" href="">
+                        <div class="portfolio__services-top-wrapper">
+                        <img class="portfolio__services-img" src="./images/work8.jpg" alt="Ярлык с надписью LAB EL TAG">
+                        <p class="portfolio__services-top-text"></p>
+                        </div>
+                        <div class="portfolio__services-descr">
+                        <h2 class="portfolio__services-header">Проект LAB</h2>
+                        <p class="portfolio__services-text">Маркетинг</p>
+                    </div>
+                    </a>
+                </li>
+                <li class="portfolio__services-item list">
+                    <a class="portfolio__services-link link" href="">
+                        <div class="portfolio__services-top-wrapper">
+                        <img class="portfolio__services-img" src="./images/work9.jpg" alt="Две руки печатают на ноутбуке">
+                        <p class="portfolio__services-top-text"></p>
+                        </div>
+                        <div class="portfolio__services-descr">
+                        <h2 class="portfolio__services-header">Growing Business</h2>
+                        <p class="portfolio__services-text">Приложение</p>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+          </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-block">
+        <a class=" footer-logo logo" href="/"><span class="logo-accent">Web</span>Studio</a>
+        <address class="footer-address">
+            <ul class="footer-address-list">
+                <li class="footer-contacts list"><a class="footer-contacts-link link" href="/">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="footer-contacts list"><a class="footer-contacts-link link transparent" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="footer-contacts list"><a class="footer-contacts-link link transparent" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            </ul>
+        </address>
+    </div>
+        <div class="social-networks-footer">
+            <p class="social-network-footer-text">Присоединяйтесь</p>
+                <ul class="social-networks-footer-list list">
+                    <li class="social-networks-footer-item">
+                        <a href="/" class="social-networks-footer-link">
+                        <svg class="social-networks-footer-icon">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="social-networks-footer-item">
+                        <a href="/" class="social-networks-footer-link">
+                        <svg class="social-networks-footer-icon">
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="social-networks-footer-item">
+                        <a href="/" class="social-networks-footer-link">
+                        <svg class="social-networks-footer-icon">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="social-networks-footer-item">
+                        <a href="/" class="social-networks-footer-link">
+                        <svg class="social-networks-footer-icon">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        <div class="footer-subscription">
+            <p class="subscription-title">Подпишитесь на рассылку</p>
+            <form class="subscription-form">
+                <input type="email" name="subscription-email" class="subscription-email" placeholder="E-mail">
+                <button type="submit" class="subscription-btn">Подписаться
+                    <svg class="subscription-icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-subscription"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    </footer>
+    
+</body>
+</html>

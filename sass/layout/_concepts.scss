@@ -1,0 +1,72 @@
+.concepts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;   
+    }
+}
+
+.concepts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.concepts-item {
+    width: 100%;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) /4);
+    }
+}
+
+.concepts-header {
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--headline-text-color);
+margin-bottom: 10px;
+text-align: center;
+}
+
+.concepts-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+
+.concepts-thumb {
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.concepts-icon:nth-child(1) {
+    width: 65px;
+    height: 70px;
+}
+
+.concepts-icon:nth-child(2) {
+    width: 67px;
+    height: 70px;
+}
+
+.concepts-icon:nth-child(3) {
+    width: 70px;
+    height: 54px;
+}
+
+.concepts-icon:nth-child(4) {
+    width: 55px;
+    height: 60px;
+}

@@ -1,0 +1,208 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    position: absolute;
+    width: 450;
+    height: 609px;
+    padding: 40px 39px 40px 41px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--secondary-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
+}
+
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: var(--secondary-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-button-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover .close-button-svg {
+    fill: var(--accent-color);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--headline-text-color);
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
+}
+
+.modal-label {
+    display: block;
+    padding-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+
+}
+
+.modal-field {
+    margin-bottom: 10px;
+}
+
+.modal-field > .comment {
+    margin-bottom: 0;
+}
+
+.modal-input {
+    width: 448px;
+    height: 40px;
+    padding-left: 44px;
+    padding-right: 15px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        font-size: 14px;
+        line-height: 1.14;
+        @media screen and (min-width: 1200px) {
+            font-size: 12px;
+            line-height: 1.17;
+        }
+    }
+}
+
+.modal-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-input:focus + & {
+        fill: var(--accent-color);
+    }
+}
+
+.modal-text {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    resize: none;
+}
+
+.modal-text:focus {
+    border-color: var(--accent-color);
+}
+
+.modal-label-checkbox {
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.17;
+    // font-size: 14px;
+    // line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.modal-checkbox-link {
+    color: var(--accent-color);
+}
+
+.modal-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
+    padding: 10px 32px;
+    border: transparent;
+    border-radius: 4px;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-wrap {
+    position: relative;
+}
+
+.modal-label-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.modal-label-checkbox span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--headline-text-color);
+}
+
+.checked-icon {
+    fill: transparent;
+}
+
+.modal-checkbox:checked + .modal-label-checkbox span {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 2px;
+}
+
+.modal-checkbox:checked + .modal-label-checkbox .checked-icon {
+    fill: var(--secondary-color);
+}
+
+.visually-hidden {
+    display: none;
+}

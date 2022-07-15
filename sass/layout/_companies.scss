@@ -1,0 +1,50 @@
+.companies-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;   
+    }
+}
+
+.companies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.companies-item {
+    width: calc((100% - 30px) / 2);
+    height: 92px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
+}
+
+.companies-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.companies-icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .companies-link:hover &,
+    .companies-link:focus & {
+        fill: var(--accent-color);
+    }
+}

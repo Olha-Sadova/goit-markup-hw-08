@@ -1,0 +1,12 @@
+.headline {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--headline-text-color);
+    padding-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        padding-bottom: 50px;
+    }
+    }
