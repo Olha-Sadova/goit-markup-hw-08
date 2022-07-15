@@ -1,7 +1,7 @@
 .companies-section {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 1200px) {
+    @include tablet {
     padding-top: 94px;
     padding-bottom: 94px;   
     }
@@ -16,10 +16,10 @@
 .companies-item {
     width: calc((100% - 30px) / 2);
     height: 92px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include tablet {
         width: calc((100% - 60px) / 3);
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: calc((100% - 150px) / 6);
     }
 }

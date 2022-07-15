@@ -15,10 +15,10 @@
 
 .concepts-item {
     width: 100%;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include tablet {
         width: calc((100% - 30px) / 2);
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: calc((100% - 90px) /4);
     }
 }
