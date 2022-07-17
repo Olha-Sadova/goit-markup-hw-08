@@ -559,8 +559,8 @@ body {
 }
 
 .main-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg-img-mob.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -576,8 +576,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg-img-tab.jpg);
-    padding-top: 118px;
-    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
@@ -588,6 +586,8 @@ body {
 @media screen and (min-width: 1200px) {
   .main-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg-img-dsk.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -796,17 +796,6 @@ body {
 .team__img {
   width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team__img {
-    height: 374px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__img {
-    height: 260px;
-  }
-}
-
 .team__item {
   width: 100%;
   background-color: var(--secondary-color);
@@ -1196,6 +1185,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscription-form {
     flex-direction: column;
+    padding-top: 60px;
   }
 }
 
