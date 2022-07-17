@@ -95,12 +95,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscription {
-    // @include tablet {
-    //     display: ;
-    // }
-@include desktop {
-    padding-left: 93px;
-}
+    @include tablet {
+        padding-top: 60px;
+    }
+    @include desktop {
+        padding-left: 93px;
+    }
 }
 
 .subscription-form {
@@ -111,7 +111,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     gap: 20px;
     @include tablet {
         flex-direction: column;
-        padding-top: 60px;
     }
 }
 

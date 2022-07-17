@@ -796,6 +796,17 @@ body {
 .team__img {
   width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__img {
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    height: 260px;
+  }
+}
+
 .team__item {
   width: 100%;
   background-color: var(--secondary-color);
@@ -1169,6 +1180,11 @@ body {
   fill: var(--secondary-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscription {
+    padding-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-subscription {
     padding-left: 93px;
@@ -1185,7 +1201,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscription-form {
     flex-direction: column;
-    padding-top: 60px;
   }
 }
 
