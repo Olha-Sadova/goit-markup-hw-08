@@ -796,6 +796,11 @@ body {
 .team__img {
   width: 100%;
 }
+@media screen and (min-width: 1200px) {
+  .team__img {
+    height: 260px;
+  }
+}
 
 .team__item {
   width: 100%;

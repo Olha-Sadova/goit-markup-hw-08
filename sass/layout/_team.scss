@@ -32,9 +32,9 @@
     // @include tablet {
     //     height: 374px;
     // }
-    // @include desktop {
-    //     height: 260px;
-    // }
+    @include desktop {
+        height: 260px;
+    }
 }
 
 .team__item {
