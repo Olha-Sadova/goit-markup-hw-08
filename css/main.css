@@ -1098,6 +1098,11 @@ body {
   text-align: center;
   gap: 60px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    gap: 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
     text-align: start;

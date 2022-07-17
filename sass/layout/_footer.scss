@@ -10,6 +10,9 @@
     justify-content: center;
     text-align: center;
     gap: 60px;
+    @include tablet {
+        gap: 0px;
+    }
     @include desktop {
         text-align: start;
         gap: 0px;
