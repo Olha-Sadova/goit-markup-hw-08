@@ -228,8 +228,9 @@ body {
 
 .modal {
   position: absolute;
-  width: 290px;
-  padding: 30px 19px 30px 21px;
+  width: 450px;
+  height: 609px;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -237,16 +238,10 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .modal {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
-    padding: 40px 39px 40px 41px;
   }
 }
 
@@ -295,21 +290,14 @@ body {
 .modal-title {
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--headline-text-color);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .modal-title {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal-title {
-    font-size: 20px;
     line-height: 1.15;
   }
 }
@@ -328,7 +316,7 @@ body {
 }
 
 .modal-field > .comment {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .modal-input {
@@ -385,16 +373,10 @@ body {
 
 .modal-label-checkbox {
   margin: 0 auto;
-  font-size: 7px;
-  line-height: 1.12;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color);
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .modal-label-checkbox {
-    font-size: 12px;
-    line-height: 1.17;
-  }
 }
 @media screen and (min-width: 1200px) {
   .modal-label-checkbox {
@@ -579,7 +561,7 @@ body {
 .main-section {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bcg-img-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg-img-mob.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -594,6 +576,8 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bcg-img-tab.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
@@ -683,6 +667,16 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .concepts-header {
+    text-align-last: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .concepts-header {
+    text-align-last: left;
+  }
+}
 
 .concepts-text {
   font-weight: 400;
@@ -738,7 +732,6 @@ body {
 
 .work-list {
   display: flex;
-  margin-top: 50px;
 }
 
 .work-img, .team-img {
@@ -802,7 +795,6 @@ body {
 
 .team__img {
   width: 100%;
-  height: 460px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__img {
@@ -894,7 +886,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .companies-section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1109,6 +1101,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-container {
     text-align: start;
+    gap: 0px;
   }
 }
 
@@ -1120,6 +1113,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-block {
     text-align: left;
+    padding-right: 70px;
   }
 }
 
@@ -1186,12 +1180,23 @@ body {
   fill: var(--secondary-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-subscription {
+    padding-left: 93px;
+  }
+}
+
 .subscription-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscription-form {
+    flex-direction: column;
+  }
 }
 
 .subscription-email {
@@ -1205,6 +1210,11 @@ body {
   background-color: transparent;
   outline: none;
   color: var(--secondary-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscription-email {
+    width: 450px;
+  }
 }
 
 .subscription-btn {

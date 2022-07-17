@@ -31,6 +31,12 @@ text-transform: uppercase;
 color: var(--headline-text-color);
 margin-bottom: 10px;
 text-align: center;
+@include tablet {
+    text-align-last: left;
+}
+@include desktop {
+    text-align-last: left;
+}
 }
 
 .concepts-text {

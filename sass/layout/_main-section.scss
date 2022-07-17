@@ -7,7 +7,7 @@
 .main-section {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bcg-img-mob.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg-img-mob.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,6 +18,8 @@
     }
     @include tablet {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bcg-img-tab.jpg);
+        padding-top: 118px;
+        padding-bottom: 118px;
         @include retina {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bcg-img-tab-2x.jpg)
         }

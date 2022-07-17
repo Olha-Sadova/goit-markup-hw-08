@@ -10,9 +10,9 @@
 
 .modal {
     position: absolute;
-    width: 290px;
-    // height: 609px;
-    padding: 30px 19px 30px 21px;
+    width: 450px;
+    height: 609px;
+    padding: 40px;
     top: 50%;
     left: 50%;
     // margin: 15px;
@@ -21,14 +21,9 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    @include tablet {
-        width: 450px;
-    }
-
     @include desktop {
         width: 528px;
         height: 581px;
-        padding: 40px 39px 40px 41px;
     }
 }
 
@@ -74,18 +69,12 @@
 .modal-title {
     margin-bottom: 12px;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--headline-text-color);
-   @include tablet {
-    font-size: 20px;
-    line-height: 1.5;    
-   }  
-   
+    color: var(--headline-text-color);   
    @include desktop {
-        font-size: 20px;
         line-height: 1.15;
     }
 }
@@ -105,7 +94,7 @@
 }
 
 .modal-field > .comment {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .modal-input {
@@ -163,14 +152,10 @@
 
 .modal-label-checkbox {
     margin: 0 auto;
-    font-size: 7px;
-    line-height: 1.12;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    @include tablet {
-        font-size: 12px;
-        line-height: 1.17;
-    }
     @include desktop {
         font-size: 14px;
         line-height: 1.71;
